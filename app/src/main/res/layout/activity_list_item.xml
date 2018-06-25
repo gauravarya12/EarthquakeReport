@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:orientation="horizontal"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingTop="16dp">
+    <TextView
+        android:id="@+id/magnitude"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/magnitude_circle"
+        android:gravity="center"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        tools:text="7.5" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text = "Near the"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/offset"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/textColorEarthquakeDetails"
+        android:textSize="12dp"
+        android:layout_toRightOf="@id/magnitude"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/place"
+        android:layout_marginLeft="16dp"
+        tools:text="Nepal"
+        android:ellipsize="end"
+        android:minLines="2"
+        android:textColor="@color/textColorEarthquakeLocation"
+        android:layout_toRightOf="@id/magnitude"
+        android:layout_below="@id/offset"
+        android:layout_marginRight="16dp"
+        android:textSize="15sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        tools:text="Jun 28 2016"
+        android:textSize="12dp"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/textColorEarthquakeDetails"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/time"
+        tools:text = "7:45 PM"
+        android:textSize="12dp"
+        android:paddingLeft="16dp"
+        android:textColor="@color/textColorEarthquakeDetails"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/date"/>
+
+</RelativeLayout>
